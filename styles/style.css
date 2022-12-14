@@ -185,8 +185,7 @@ line-height: 30px;
 
 .slider-wrapper {
   display: flex;
-  margin-right: 140px;
-  margin-left: 140px;
+  justify-content: center;
 }
 
 .container {
@@ -204,6 +203,7 @@ h2 {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin-top: 65px;
 }
 
 .details {
@@ -216,6 +216,7 @@ h2 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
 }
 
 .details:after {
@@ -224,8 +225,9 @@ h2 {
   width: 220px;
   height: 9px;
   background-color:#FFE17F;
-  right: 790px;
-  top: 729px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
@@ -354,6 +356,7 @@ dl {
 .service-control {
   list-style-type: none;
   margin: 0;
+  position: relative;
 }
 
 .details-property {
@@ -367,16 +370,18 @@ dl {
   letter-spacing: 0.2em;
   padding: 9px 120px 11px 0;
   margin-bottom: 55px;
+  position: relative;
 }
 
-.details-property:before {
+.details-property::after {
   content: '';
   position: absolute;
   width: 140px;
   height: 10px;
   background-color:#FFE17F;
-  left: 310px;
-  top: 1522px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-63%, -50%);
   z-index: -1;
 }
 
@@ -393,27 +398,30 @@ dl {
   padding: 9px 120px 11px 0;
   margin-top: 64px;
   margin-bottom: 56px;
+  position: relative;
 }
 
-.details-property-delivery:before {
+.details-property-delivery::after {
   content: '';
   position: absolute;
   width: 280px;
   height: 40px;
   background: #000000;
-  left: 305px;
-  top: 1412px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-70%, -50%);
   z-index: -1;
 }
 
-.service-control:before {
+.service-control::after {
   content: '';
   position: absolute;
   width: 7px;
   height: 319px;
   background: #000000;
-  left: 580px;
-  top: 1355px;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
@@ -428,16 +436,18 @@ dl {
   letter-spacing: 0.2em;
   padding: 9px 120px 11px 0;
   margin-bottom: 75px;
+  position: relative;
 }
 
-.details-property-credit:before {
+.details-property-credit::after {
   content: '';
   position: absolute;
   width: 140px;
   height: 10px;
   background-color:#FFE17F;
-  left: 305px;
-  top: 1617px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-75%, -50%);
   z-index: -1;
 }
 
@@ -451,6 +461,7 @@ dl {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  position: relative;
 }
 
 .property-delivery-descr {
@@ -458,16 +469,19 @@ dl {
   margin-top: 34px;
 }
 
-.property-delivery:before {
+.property-delivery::after {
   content: '';
   position: absolute;
   width: 136px;
   height: 160px;
   right: 350px;
   background: url(/icon/delivery-man.png);
+  left: 50%;
+  top: 50%;
+  transform: translate(150%, -20%);
 }
 
-.delivery-info:before {
+.delivery-info::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -475,6 +489,7 @@ dl {
   background-color: #F0F0F0;
   z-index: -2;
   left: 0;
+  transform: translateY(-145px);
 }
 
 .wrapper-banner {
@@ -586,15 +601,18 @@ dl {
   letter-spacing: 0.2em;
   padding: 9px 120px 11px 0;
   margin-bottom: 75px;
+  position: relative;
 }
 
-.button-about-us:before {
+.button-about-us::after {
   content: '';
   position: absolute;
   width: 260px;
   height: 10px;
   background-color:#FFE17F;
-  left: 305px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-75%, -50%);
   z-index: -1;
 }
 
@@ -617,6 +635,7 @@ dl {
   letter-spacing: 0.2em;
   padding: 9px 120px 11px 0;
   margin-bottom: 75px;
+  position: relative;
 }
 
 .button-contacts:before {
@@ -625,7 +644,9 @@ dl {
   width: 260px;
   height: 10px;
   background-color:#FFE17F;
-  left: 920px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-75%, -50%);
   z-index: -1;
 }
 
@@ -651,7 +672,7 @@ dl {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 144px;
+  margin-top: 100px;
 }
 
 .field {
@@ -690,6 +711,10 @@ dl {
   background: url(/icon/tick-green.png);
 }
 
+.footer-container {
+  display: flex;
+}
+
 .page-footer {
   height: 321px;
   background-color: #444444;
@@ -702,7 +727,6 @@ dl {
   display: flex;
   flex-direction: column;
   margin-top: 62px;
-  margin-left: -140px;
 }
 
 .footer-contacts-address-text {
@@ -714,13 +738,13 @@ dl {
 }
 
 .page-footer-nav {
-  width: 445px;
+  width: 747px;
   display: flex;
+  justify-content: center;
 }
 
 .nav-footer {
-  margin-left: 119px;
-  margin-right: 183px;
+
 }
 
 .footer-nav-list {
@@ -764,7 +788,6 @@ dl {
 
 .page-footer-phone {
   margin-top: 140px;
-  margin-left: 183px;
 }
 
 .footer-phone {
@@ -775,12 +798,11 @@ dl {
 .contacts-phone {
   font-size: 16px;
   color: #FFFFFF;
-  margin-left: 183px;
 }
 
 .footer-logo {
   width: 115px;
   height: 33px;
   margin-top: 63px;
-  margin-left: 243px;
+  margin-left: 30px;
 }
