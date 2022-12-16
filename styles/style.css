@@ -40,17 +40,11 @@ line-height: 30px;
 .header-wrapper {
   display: flex;
   justify-content: center;
-}
-
-#rectangle {
-    position: absolute;
-    z-index: -1;
-    width: 1160px;
-    height:400px;
-    background:#FFE17F;
-    margin-top: 25px;
-    margin-right: 140px;
-    margin-left: 140px;
+  background-color:#FFE17F;
+  margin: 0 auto;
+  width: 1160px;
+  height: 300px;
+  margin-top: 40px;
 }
 
 .user-menu {
@@ -59,28 +53,27 @@ line-height: 30px;
 }
 
 .page-header {
-  margin: 15px 140px;
+  margin: -20px 140px;
   width: 1160px;
   display: flex;
   justify-content: center;
 }
 
 .page-header-logo {
-  margin-top: 5px;
   margin-left: 60px;
 }
 
 .first-line-menu {
   display: flex;
   flex-wrap: no-wrap;
+  margin-top: 30px;
 }
 
 .search-section {
   display: flex;
-  margin-top: 66px;
   margin-left: 60px;
   width: 517px;
-   position: relative;
+  position: relative;
 }
 
 .form-search {
@@ -111,7 +104,6 @@ line-height: 30px;
 
 .enter {
   width: 231px;
-  margin-top: 71px;
   margin-left: 30px;
   text-decoration: none;
   color: #000000;
@@ -126,7 +118,7 @@ line-height: 30px;
   background-image: url("/icon/enter.png");
   left: 50%;
   top: 50%;
-  transform: translate(-85px, -17px);
+  transform: translate(-97px, -17px);
 }
 
 .main-nav-user-list {
@@ -134,8 +126,8 @@ line-height: 30px;
   flex-wrap: no-wrap;
   max-width: 250px;
   margin-left: 26px;
-  margin-top: 71px;
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .main-nav-user-compare, .main-nav-user-cart {
@@ -172,12 +164,14 @@ line-height: 30px;
 
 .main-container {
   flex-grow: 1;
+  margin-top: -52px;
 }
 
 .main-nav-list {
   display: flex;
   width: 1040px;
   margin: 30px 60px;
+  position: relative;
 }
 
 .main-nav-list::before {
@@ -188,7 +182,7 @@ line-height: 30px;
   background-image: url("/icon/plus in circle.png");
   left: 50%;
   top: 50%;
-  transform: translate(-220px, -10px);
+  transform: translate(-278px, -54px);
 }
 
 .catalog {
@@ -262,7 +256,6 @@ line-height: 30px;
   font-size: 180px;
   line-height: 30px;
   color: #FFFFFF;
-  z-index: -1;
   position: absolute;
   margin-left: 297px;
   margin-top: -20px;
@@ -284,7 +277,7 @@ h2 {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-
+  z-index: 1;
 }
 
 .details {
@@ -393,8 +386,6 @@ dl {
 }
 
 .catalogue-categories {
-  display: flex;
-  flex-direction: column;
   width: 160px;
 }
 
