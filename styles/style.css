@@ -115,10 +115,11 @@ line-height: 30px;
   content: '';
   width: 16px;
   height: 16px;
-  background-image: url("/icon/enter.png");
+  background-image: url("/icon/enter.svg");
   left: 50%;
   top: 50%;
-  transform: translate(-97px, -17px);
+  transform: translate(-97px, -14px);
+  background-repeat: no-repeat;
 }
 
 .main-nav-user-list {
@@ -145,10 +146,11 @@ line-height: 30px;
   content: '';
   width: 16px;
   height: 16px;
-  background-image: url("/icon/compare.png");
+  background-image: url("/icon/compare.svg");
   left: 50%;
   top: 50%;
-  transform: translate(-65px, -9px);
+  transform: translate(-60px, -6px);
+  background-repeat: no-repeat;
 }
 
 .card-text::before {
@@ -156,10 +158,11 @@ line-height: 30px;
   content: '';
   width: 16px;
   height: 16px;
-  background-image: url("/icon/busket.png");
+  background-image: url("/icon/busket.svg");
   left: 50%;
   top: 50%;
-  transform: translate(-60px, -9px);
+  transform: translate(-56px, -8px);
+  background-repeat: no-repeat;
 }
 
 .main-container {
@@ -182,7 +185,12 @@ line-height: 30px;
   background-image: url("/icon/plus in circle.png");
   left: 50%;
   top: 50%;
-  transform: translate(-278px, -54px);
+  transform: translate(-293px, -26px);
+}
+
+.main-nav-list:hover::before {
+  background-image: url("/icon/minus in circle.svg");
+  background-repeat: no-repeat;
 }
 
 .catalog {
@@ -196,8 +204,42 @@ line-height: 30px;
   font-weight: 800;
   text-transform: uppercase;
   list-style-type: none;
+  font-size: 16px;
 }
 
+/*Скрытое меню*/
+.subcatalog {
+			    display: none;
+          position: absolute;
+			    top: 100%;
+          max-width: 200px;
+}
+
+.main-nav-list:hover .subcatalog {
+  display: flex;
+  margin-left: -40px;
+
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.col:last-child {
+    justify-content: space-between;
+}
+
+.catalog-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.col li {
+  width: 250px;
+}
 
 .catalog-item-delivery, .catalog-item-contacts, .catalog-item-goods, .catalog-item-guarantee {
   text-decoration: none;
@@ -210,6 +252,7 @@ line-height: 30px;
   font-weight: 400;
   text-transform: none;
   list-style-type: none;
+  margin: 10px;
 }
 
 .main-menu {
@@ -242,8 +285,6 @@ line-height: 30px;
 }
 
 .container {
-  display: flex;
-  margin-right: 40px;
   width: 400px;
   height: 400px;
 }
@@ -261,10 +302,15 @@ line-height: 30px;
   margin-top: -20px;
 }
 
+.promo-slider {
+  display: flex;
+
+}
+
 .promo-slider-descr-wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
+  margin-left: 200px;
 }
 
 .promo-slider-descr-wrap h2 {
@@ -295,14 +341,28 @@ h2 {
 
 .details:after {
   content: '';
-  position: absolute;
   width: 220px;
-  height: 9px;
+  height: 8px;
   background-color:#FFE17F;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+
+}
+
+.details:hover {
+  background-color: #FFE17F;
+}
+
+.details:active {
+  background-color: #FFCC33;
+}
+
+.details:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #7B61FF;
 }
 
 dl {
