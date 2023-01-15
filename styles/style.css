@@ -294,15 +294,20 @@ h2 {
 }
 
 .details:after {
-  content: '';
-  position: absolute;
-  width: 220px;
-  height: 9px;
   background-color:#FFE17F;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+}
+
+.details:hover {
+  background-color: #FFE17F;
+}
+
+.details:active {
+  background-color: #FFCC33;
+}
+
+.details:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #7B61FF;
 }
 
 dl {
