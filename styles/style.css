@@ -188,7 +188,7 @@ line-height: 30px;
   transform: translate(-293px, -26px);
 }
 
-.main-nav-list::before:hover {
+.main-nav-list:hover::before {
   background-image: url("/icon/minus in circle.svg");
   background-repeat: no-repeat;
 }
